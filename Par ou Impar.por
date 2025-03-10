@@ -3,22 +3,30 @@ programa
 	
 	funcao inicio()
 	{
+		// criei o vetor que receberá os numeros
 		inteiro numeros[6]
 		inteiro modulo
 
+		// o loop pede e lê números até todos os espaços do vetor estarem completos
 		para(inteiro i = 0;i<=5;i++)
 		{
 			escreva("Digite um número: ")
 			leia(numeros[i])
 		}
+
+		//limpa o console
 		limpa()
+
+		// esse loop divide todos os numeros do vetor por 2 e pega o resto
 		para(inteiro i = 0;i<=5;i++)
 		{
 			modulo = numeros[i]%2
+			// Se o resto da divisão for 0, ele motra para o usuário que o numero é par
 			se (modulo == 0)
 			{
 				escreva(numeros[i] + " é um número PAR\n")
 			}
+			//caso contrário, ele mostra que o número é impar
 			senao
 			{
 				escreva(numeros[i] + " é um número IMPAR\n")
@@ -26,14 +34,3 @@ programa
 		}
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 0; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {numeros, 6, 10, 7};
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
